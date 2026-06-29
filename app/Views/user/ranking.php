@@ -100,4 +100,17 @@
 
 </div>
 
+<div class="mt-3">
+
+    <a href="<?= base_url('cetak/ranking') ?>"
+       class="btn-primary-custom">
+
+        <i class="bi bi-printer-fill"></i>
+
+        Cetak Hasil Ranking
+
+    </a>
+
+</div>
+
 <?= $this->endSection() ?>

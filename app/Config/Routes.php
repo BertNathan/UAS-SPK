@@ -26,3 +26,4 @@ $routes->get('/ranking-user', 'User::ranking');
 $routes->post('/cekLogin', 'Auth::cekLogin');
 $routes->get('/user/alternatif', 'User::alternatif');
 $routes->get('/user/ranking', 'Moora::rankingUser');
+$routes->get('cetak/ranking', 'Cetak::ranking');
