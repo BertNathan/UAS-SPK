@@ -44,7 +44,7 @@ class Auth extends BaseController
     }
 }
 
-        return redirect()->back();
+        return redirect()->back()->with('error', 'Username atau Password salah!');
     }
 
     public function logout()

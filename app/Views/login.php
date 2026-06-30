@@ -23,10 +23,22 @@
         <div class="login-box">
 
             <h1 class="mb-5 fw-bold">
-                Login
-            </h1>
+    Login
+</h1>
 
-            <form action="/cekLogin" method="post">
+<?php if(session()->getFlashdata('error')): ?>
+
+<div class="login-alert">
+
+    <i class="bi bi-exclamation-circle-fill"></i>
+
+    <?= session()->getFlashdata('error') ?>
+
+</div>
+
+<?php endif; ?>
+
+<form action="/cekLogin" method="post">
 
                 <input
                     type="text"
@@ -133,6 +145,27 @@
     background:#1E6FDB;
 
     color:white;
+
+}
+.login-alert{
+
+    background:#FFECEC;
+
+    color:#D32F2F;
+
+    border:1px solid #F5C2C2;
+
+    border-radius:12px;
+
+    padding:12px 16px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    text-align:left;
 
 }
 
